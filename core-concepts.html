@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Core AML compliance concepts explained: KYC, CDD, EDD, PEPs, beneficial ownership, sanctions screening, transaction monitoring, SAR/STR filing, and the Three Lines of Defence.">
+  <title>Core Concepts — The AML Desk</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><text x='50' y='68' font-size='50' font-weight='bold' text-anchor='middle' fill='%230a0f1e' font-family='system-ui'>A</text></svg>" type="image/svg+xml">
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar__logo"><img src="images/logo.png" alt="The AML Desk Logo" class="navbar__logo-image"></a>
+      <ul class="navbar__links" id="nav-links" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li class="navbar__dropdown" role="none"><a href="#" class="navbar__dropdown-toggle" role="menuitem" aria-haspopup="true">Learn</a><ul class="navbar__dropdown-menu" role="menu"><li role="none"><a href="fundamentals.html" role="menuitem">AML Fundamentals</a></li><li role="none"><a href="regulatory-landscape.html" role="menuitem">Regulatory Landscape</a></li><li role="none"><a href="core-concepts.html" role="menuitem">Core Concepts</a></li><li role="none"><a href="typologies.html" role="menuitem">Typologies & Red Flags</a></li><li role="none"><a href="landmark-cases.html" role="menuitem">Landmark Cases</a></li></ul></li>
+        <li role="none"><a href="glossary.html" role="menuitem">Glossary</a></li>
+        <li role="none"><a href="quizzes.html" role="menuitem">Quizzes</a></li>
+        <li role="none"><a href="news.html" role="menuitem">News</a></li>
+        <li role="none"><a href="careers.html" role="menuitem">Careers</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+      </ul>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">›</span><span class="current">Core Concepts</span></nav>
+        <h1>Core AML Concepts</h1>
+        <p>The essential compliance concepts every AML professional must understand — explained in plain English.</p>
+      </div>
+    </header>
+
+    <!-- KYC -->
+    <section class="section" id="kyc">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Identity Verification</span>
+            <h2>KYC — Know Your Customer</h2>
+          </div>
+          <p class="reveal"><strong>Know Your Customer (KYC)</strong> is the process by which financial institutions verify the identity of their clients. It is the cornerstone of every AML programme — you cannot assess risk if you don't know who your customer is.</p>
+          <p class="reveal">KYC is not a one-time event. It's an ongoing obligation that begins at account opening and continues throughout the relationship, with periodic reviews based on the customer's risk level.</p>
+          <h3 class="reveal">KYC Typically Involves</h3>
+          <ul class="reveal">
+            <li><strong>Customer Identification Programme (CIP):</strong> Collecting and verifying identifying information (name, date of birth, address, ID documents)</li>
+            <li><strong>Customer Due Diligence (CDD):</strong> Understanding the customer's business, purpose of the relationship, expected transaction patterns</li>
+            <li><strong>Ongoing Monitoring:</strong> Continuously reviewing transactions and updating customer information</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CDD & EDD -->
+    <section class="section section--alt" id="cdd-edd">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Risk-Based Approach</span>
+            <h2>CDD &amp; EDD — Due Diligence Levels</h2>
+          </div>
+          <p class="reveal">Due diligence is not one-size-fits-all. The depth of scrutiny should match the level of risk. This is the <strong>risk-based approach</strong> — the foundational principle of modern AML regulation.</p>
+
+          <div class="grid grid--3 stagger" style="margin: var(--space-8) 0;">
+            <div class="card">
+              <div class="card__icon card__icon--teal" aria-hidden="true">📋</div>
+              <h3 class="card__title" style="font-size: var(--text-lg);">Simplified DD (SDD)</h3>
+              <p class="card__text">Applied when the risk of ML/TF is <strong>low</strong>. Reduced verification requirements — for example, publicly listed companies with transparent ownership.</p>
+            </div>
+            <div class="card">
+              <div class="card__icon card__icon--amber" aria-hidden="true">📝</div>
+              <h3 class="card__title" style="font-size: var(--text-lg);">Standard CDD</h3>
+              <p class="card__text">The baseline level applied to <strong>all</strong> customers. Identify the customer, verify identity, understand the purpose and nature of the business relationship.</p>
+            </div>
+            <div class="card">
+              <div class="card__icon card__icon--purple" aria-hidden="true">🔬</div>
+              <h3 class="card__title" style="font-size: var(--text-lg);">Enhanced DD (EDD)</h3>
+              <p class="card__text">Applied to <strong>high-risk</strong> customers. Additional verification, senior management approval, source of wealth/funds investigation, more frequent monitoring.</p>
+            </div>
+          </div>
+
+          <h3 class="reveal">When is EDD Required?</h3>
+          <ul class="reveal">
+            <li>Politically Exposed Persons (PEPs) and their family/associates</li>
+            <li>Customers from high-risk jurisdictions (FATF Grey/Black List countries)</li>
+            <li>Correspondent banking relationships</li>
+            <li>Complex or unusual transactions with no apparent economic purpose</li>
+            <li>Non-face-to-face business relationships</li>
+            <li>Private banking clients</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEPs -->
+    <section class="section" id="peps">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">High-Risk Customers</span>
+            <h2>PEPs — Politically Exposed Persons</h2>
+          </div>
+          <p class="reveal">A <strong>Politically Exposed Person (PEP)</strong> is an individual who holds or has held a prominent public function. PEPs are considered high-risk because their position may make them vulnerable to corruption and bribery.</p>
+          <h3 class="reveal">Types of PEPs</h3>
+          <ul class="reveal">
+            <li><strong>Foreign PEPs:</strong> Hold prominent public functions in a <em>foreign</em> country (always high risk)</li>
+            <li><strong>Domestic PEPs:</strong> Hold prominent public functions in the <em>home</em> country (risk-based assessment)</li>
+            <li><strong>International Organisation PEPs:</strong> Senior management of international organisations (UN, World Bank, etc.)</li>
+          </ul>
+          <h3 class="reveal">PEP Family &amp; Close Associates</h3>
+          <p class="reveal">AML regulations also extend PEP scrutiny to <strong>family members</strong> (spouse, children, parents) and <strong>close associates</strong> (known business partners, joint beneficial owners).</p>
+          <div class="callout callout--warning reveal">
+            <p><strong>⚠️ Important</strong> Being a PEP is not criminal — it simply means enhanced due diligence is required. PEP status does not imply guilt or wrongdoing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficial Ownership -->
+    <section class="section section--alt" id="beneficial-ownership">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Transparency</span>
+            <h2>Beneficial Ownership</h2>
+          </div>
+          <p class="reveal">The <strong>beneficial owner</strong> is the natural person who ultimately owns or controls a customer entity, or on whose behalf a transaction is conducted. Identifying beneficial owners is critical because criminals often hide behind shell companies, trusts, and nominee arrangements.</p>
+          <h3 class="reveal">FATF Definition</h3>
+          <p class="reveal">FATF Recommendation 10 defines beneficial owner as: the natural person(s) who ultimately owns or controls a customer and/or the natural person on whose behalf a transaction is being conducted. Typical thresholds are <strong>25%</strong> ownership/control (varies by jurisdiction).</p>
+          <h3 class="reveal">Why It Matters</h3>
+          <p class="reveal">Shell companies with hidden ownership have been at the centre of major money laundering scandals (1MDB, Danske Bank). Regulators globally are now requiring central beneficial ownership registers and stricter identification procedures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sanctions Screening -->
+    <section class="section" id="sanctions-screening">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Prohibited Parties</span>
+            <h2>Sanctions Screening</h2>
+          </div>
+          <p class="reveal"><strong>Sanctions screening</strong> is the process of checking customers, transactions, and counterparties against official sanctions lists to ensure the institution is not dealing with prohibited parties.</p>
+          <h3 class="reveal">Key Sanctions Lists</h3>
+          <ul class="reveal">
+            <li><strong>UN Security Council Consolidated List</strong></li>
+            <li><strong>OFAC SDN List</strong> (US — Specially Designated Nationals)</li>
+            <li><strong>EU Consolidated Sanctions List</strong></li>
+            <li><strong>UK HM Treasury Sanctions List</strong></li>
+            <li><strong>India MHA/MEA Sanctions Lists</strong></li>
+          </ul>
+          <h3 class="reveal">Types of Screening</h3>
+          <ul class="reveal">
+            <li><strong>Customer screening:</strong> At onboarding and periodically (against updated lists)</li>
+            <li><strong>Transaction screening:</strong> Real-time screening of payment messages (originator, beneficiary, intermediaries)</li>
+            <li><strong>Name screening:</strong> Matching against PEP lists, adverse media, and enforcement databases</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transaction Monitoring -->
+    <section class="section section--alt" id="transaction-monitoring">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Detection</span>
+            <h2>Transaction Monitoring</h2>
+          </div>
+          <p class="reveal"><strong>Transaction monitoring</strong> is the ongoing process of reviewing customer transactions to identify unusual or suspicious patterns that may indicate money laundering, terrorist financing, or other financial crimes.</p>
+          <h3 class="reveal">How It Works</h3>
+          <ul class="reveal">
+            <li><strong>Rule-based systems:</strong> Predefined scenarios/thresholds that trigger alerts (e.g., transactions above a certain amount, rapid movement of funds, transactions with high-risk countries)</li>
+            <li><strong>Behavioural analytics:</strong> AI/ML-based systems that build customer profiles and flag deviations from expected behaviour</li>
+            <li><strong>Alert investigation:</strong> Compliance analysts review alerts, investigate, and determine whether to file a SAR/STR or close as false positive</li>
+          </ul>
+          <div class="callout callout--info reveal">
+            <p><strong>📌 Career Tip</strong> Transaction monitoring analyst is one of the most common entry-level roles in AML compliance. Understanding alert investigation workflows is essential for fresher interviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAR/STR Filing -->
+    <section class="section" id="sar-str">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Reporting</span>
+            <h2>SAR/STR Filing</h2>
+          </div>
+          <p class="reveal">When a financial institution identifies a suspicious transaction or activity, it is legally required to file a report with the appropriate Financial Intelligence Unit (FIU).</p>
+
+          <div class="grid grid--2 stagger" style="margin: var(--space-8) 0;">
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">SAR</h4>
+              <p class="card__text"><strong>Suspicious Activity Report</strong> — used in the US (filed with FinCEN), UK (filed with NCA), and other jurisdictions.</p>
+            </div>
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">STR</h4>
+              <p class="card__text"><strong>Suspicious Transaction Report</strong> — used in India (filed with FIU-IND), Australia, and FATF terminology.</p>
+            </div>
+          </div>
+
+          <h3 class="reveal">Key Principles</h3>
+          <ul class="reveal">
+            <li><strong>Tipping off:</strong> It is a criminal offence to inform the customer that a SAR/STR has been filed about them</li>
+            <li><strong>Safe harbour:</strong> Institutions and individuals are protected from liability for filing SARs/STRs in good faith</li>
+            <li><strong>Timeliness:</strong> Reports must be filed within prescribed deadlines (varies by jurisdiction)</li>
+            <li><strong>Quality:</strong> Reports should contain sufficient detail for the FIU to assess and take action</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Lines of Defence -->
+    <section class="section section--alt" id="three-lines">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Governance</span>
+            <h2>Three Lines of Defence</h2>
+          </div>
+          <p class="reveal">The <strong>Three Lines of Defence</strong> model is the standard governance framework for managing compliance risk in financial institutions. It defines who is responsible for what.</p>
+
+          <div class="flow-diagram reveal">
+            <div class="flow-step">
+              <span class="flow-step__number">1st Line</span>
+              <div class="flow-step__title">Business Units</div>
+              <p class="flow-step__desc">Own the risk. Front office, relationship managers, operations.</p>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="flow-step">
+              <span class="flow-step__number">2nd Line</span>
+              <div class="flow-step__title">Compliance</div>
+              <p class="flow-step__desc">Oversee and advise. AML/compliance team, risk management.</p>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="flow-step">
+              <span class="flow-step__number">3rd Line</span>
+              <div class="flow-step__title">Internal Audit</div>
+              <p class="flow-step__desc">Independently assure. Reviews effectiveness of 1st and 2nd lines.</p>
+            </div>
+          </div>
+
+          <div class="callout callout--info reveal" style="margin-top: var(--space-8);">
+            <p><strong>📌 Interview Favourite</strong> The Three Lines of Defence model is one of the most commonly asked questions in AML/compliance interviews. Be prepared to explain each line and give examples.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="cta-banner__title">Test your understanding</h2>
+          <p class="cta-banner__text">Ready to see how much you've learned? Take the Core Concepts quiz.</p>
+          <div class="cta-banner__actions">
+            <a href="quizzes.html" class="btn btn--primary btn--lg">Take the Quiz →</a>
+            <a href="typologies.html" class="btn btn--secondary btn--lg">Typologies &amp; Red Flags</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="footer__brand-logo"><img src="images/logo.png" alt="The AML Desk Logo" class="footer__logo-image"></a><p>Making AML/CFT concepts accessible to everyone — free of cost, free of jargon.</p></div>
+        <div class="footer__column"><h5>Learn</h5><ul><li><a href="fundamentals.html">AML Fundamentals</a></li><li><a href="regulatory-landscape.html">Regulatory Landscape</a></li><li><a href="core-concepts.html">Core Concepts</a></li><li><a href="typologies.html">Typologies &amp; Red Flags</a></li><li><a href="landmark-cases.html">Landmark Cases</a></li></ul></div>
+        <div class="footer__column"><h5>Tools</h5><ul><li><a href="glossary.html">A–Z Glossary</a></li><li><a href="quizzes.html">Quizzes &amp; Flashcards</a></li><li><a href="news.html">Global News Feed</a></li><li><a href="careers.html">Careers in AML</a></li></ul></div>
+        <div class="footer__column"><h5>Legal</h5><ul><li><a href="about.html">About</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+      </div>
+      <div class="footer__disclaimer" role="note"><p><strong>⚠️ Educational Disclaimer</strong> This website is created for educational and awareness purposes only. It does not constitute legal, regulatory, or compliance advice, and should not be relied upon as a substitute for professional guidance, official regulatory publications, or your employer's compliance policies. Content is compiled from publicly available regulatory and academic sources.</p></div>
+      <div class="footer__bottom"><p>&copy; 2026 The AML Desk. Educational resource — not legal advice.</p><div class="footer__bottom-links"><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

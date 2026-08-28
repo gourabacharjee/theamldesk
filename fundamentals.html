@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the fundamentals of Anti-Money Laundering (AML): what money laundering is, the three stages (placement, layering, integration), why AML matters, and how AML, CFT, and sanctions fit together.">
+  <title>AML Fundamentals — The AML Desk</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><text x='50' y='68' font-size='50' font-weight='bold' text-anchor='middle' fill='%230a0f1e' font-family='system-ui'>A</text></svg>" type="image/svg+xml">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar__logo" aria-label="The AML Desk - Home">
+        <img src="images/logo.png" alt="The AML Desk Logo" class="navbar__logo-image">
+      </a>
+      <ul class="navbar__links" id="nav-links" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li class="navbar__dropdown" role="none">
+          <a href="#" class="navbar__dropdown-toggle" role="menuitem" aria-haspopup="true">Learn</a>
+          <ul class="navbar__dropdown-menu" role="menu">
+            <li role="none"><a href="fundamentals.html" role="menuitem">AML Fundamentals</a></li>
+            <li role="none"><a href="regulatory-landscape.html" role="menuitem">Regulatory Landscape</a></li>
+            <li role="none"><a href="core-concepts.html" role="menuitem">Core Concepts</a></li>
+            <li role="none"><a href="typologies.html" role="menuitem">Typologies & Red Flags</a></li>
+            <li role="none"><a href="landmark-cases.html" role="menuitem">Landmark Cases</a></li>
+          </ul>
+        </li>
+        <li role="none"><a href="glossary.html" role="menuitem">Glossary</a></li>
+        <li role="none"><a href="quizzes.html" role="menuitem">Quizzes</a></li>
+        <li role="none"><a href="news.html" role="menuitem">News</a></li>
+        <li role="none"><a href="careers.html" role="menuitem">Careers</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+      </ul>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span class="current">AML Fundamentals</span>
+        </nav>
+        <h1>AML Fundamentals</h1>
+        <p>What money laundering is, why it matters, and how the global fight against financial crime works.</p>
+      </div>
+    </header>
+
+
+    <!-- WHAT IS MONEY LAUNDERING? -->
+    <section class="section" id="what-is-ml">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">The Basics</span>
+            <h2>What is money laundering?</h2>
+          </div>
+
+          <p class="reveal">
+            <strong>Money laundering</strong> is the process of making illegally obtained money — "dirty money" — appear
+            legitimate. Criminals who earn income from drug trafficking, fraud, corruption, tax evasion, or other crimes
+            need a way to use that money without drawing attention from law enforcement.
+          </p>
+
+          <p class="reveal">
+            The term "money laundering" is believed to originate from the practice of organised crime groups
+            in the United States using cash-intensive laundromats to mix illicit cash with legitimate business
+            revenue — literally "laundering" the money through a legal business.
+          </p>
+
+          <div class="callout callout--info reveal">
+            <p>
+              <strong>📌 Key Definition</strong>
+              Money laundering is the process by which criminals disguise the original ownership and
+              control of the proceeds of criminal conduct by making such proceeds appear to have been
+              derived from a legitimate source.
+              <br><br>
+              <small>Source: Financial Action Task Force (FATF)</small>
+            </p>
+          </div>
+
+          <p class="reveal">
+            According to the United Nations Office on Drugs and Crime (UNODC), the estimated amount of money
+            laundered globally in one year is <strong>2–5% of global GDP</strong>, or roughly
+            <strong>$800 billion to $2 trillion</strong>. However, due to the clandestine nature of money
+            laundering, precise statistics are impossible to determine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- THE THREE STAGES -->
+    <section class="section section--alt" id="three-stages">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__label">Core Framework</span>
+          <h2>The Three Stages of Money Laundering</h2>
+          <p class="section-header__description">
+            Money laundering typically follows three stages. Not every scheme uses all three,
+            and the stages may overlap — but this framework is foundational to understanding AML.
+          </p>
+        </div>
+
+        <!-- Flow Diagram -->
+        <div class="flow-diagram reveal">
+          <div class="flow-step">
+            <span class="flow-step__number">Stage 01</span>
+            <div class="flow-step__title">Placement</div>
+            <p class="flow-step__desc">Introducing dirty money<br>into the financial system</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span class="flow-step__number">Stage 02</span>
+            <div class="flow-step__title">Layering</div>
+            <p class="flow-step__desc">Creating complex layers<br>to disguise the trail</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">
+            <span class="flow-step__number">Stage 03</span>
+            <div class="flow-step__title">Integration</div>
+            <p class="flow-step__desc">Reintroducing clean-looking<br>money into the economy</p>
+          </div>
+        </div>
+
+        <!-- Detailed Explanations -->
+        <div class="container--narrow" style="margin-top: var(--space-12);">
+
+          <div class="card reveal" style="margin-bottom: var(--space-6);">
+            <div class="card__icon card__icon--amber" aria-hidden="true">1️⃣</div>
+            <h3 class="card__title">Stage 1: Placement</h3>
+            <p class="card__text">
+              The first stage involves introducing illegal funds into the legitimate financial system.
+              This is often the riskiest stage for criminals, as large amounts of cash are most
+              conspicuous and most likely to attract attention.
+            </p>
+            <p class="card__text">
+              <strong>Common methods include:</strong> depositing cash in small amounts below
+              reporting thresholds (structuring/smurfing), purchasing monetary instruments
+              (money orders, cashier's cheques), blending funds with cash-intensive businesses
+              (restaurants, car washes), and physically smuggling currency across borders.
+            </p>
+            <p class="card__text color-muted">
+              <em>Note: This description is at the awareness level found in FATF and FinCEN public advisories.
+              It describes patterns to help recognise suspicious activity, not to enable it.</em>
+            </p>
+          </div>
+
+          <div class="card reveal" style="margin-bottom: var(--space-6);">
+            <div class="card__icon card__icon--teal" aria-hidden="true">2️⃣</div>
+            <h3 class="card__title">Stage 2: Layering</h3>
+            <p class="card__text">
+              Once placed in the financial system, launderers create complex layers of transactions
+              to separate the money from its criminal origin. The goal is to make it difficult
+              for authorities to trace the funds back to their source.
+            </p>
+            <p class="card__text">
+              <strong>Common methods include:</strong> wire transfers between multiple accounts
+              (especially across jurisdictions), converting cash into financial instruments,
+              using shell companies and trusts to obscure ownership, and engaging in
+              back-to-back lending arrangements.
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card__icon card__icon--purple" aria-hidden="true">3️⃣</div>
+            <h3 class="card__title">Stage 3: Integration</h3>
+            <p class="card__text">
+              In the final stage, the "cleaned" money is reintroduced into the legitimate economy.
+              By this point, detection is extremely difficult because the money appears to come
+              from legitimate sources.
+            </p>
+            <p class="card__text">
+              <strong>Common methods include:</strong> investing in real estate, luxury goods, or
+              legitimate businesses; creating false import/export invoices at inflated prices;
+              and using front companies that lend money back to the launderer.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHY AML MATTERS -->
+    <section class="section" id="why-it-matters">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">The Impact</span>
+            <h2>Why AML matters</h2>
+          </div>
+
+          <p class="reveal">
+            Money laundering is not a victimless crime. It enables and sustains the most serious
+            criminal activities in the world. Without the ability to launder proceeds, most
+            large-scale criminal enterprises would struggle to operate.
+          </p>
+
+          <div class="grid grid--2 stagger" style="margin: var(--space-8) 0;">
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">💊 Drug Trafficking</h4>
+              <p class="card__text">Drug cartels generate billions in cash that must be laundered to be usable.</p>
+            </div>
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">💣 Terrorism Financing</h4>
+              <p class="card__text">Terrorist organisations use laundering networks to move and conceal funding.</p>
+            </div>
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">🏛️ Corruption</h4>
+              <p class="card__text">Corrupt officials launder bribes and embezzled public funds through offshore structures.</p>
+            </div>
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">👤 Human Trafficking</h4>
+              <p class="card__text">Trafficking networks launder profits to expand operations and evade detection.</p>
+            </div>
+          </div>
+
+          <p class="reveal">
+            Beyond enabling crime, money laundering <strong>undermines financial systems</strong>,
+            distorts markets, and erodes trust in institutions. It can destabilise economies —
+            particularly in developing countries — and diverts resources from productive use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- AML vs CFT vs SANCTIONS -->
+    <section class="section section--alt" id="aml-cft-sanctions">
+      <div class="container container--narrow">
+        <div class="content-body">
+          <div class="section-header reveal">
+            <span class="section-header__label">Key Distinctions</span>
+            <h2>AML vs. CFT vs. Sanctions</h2>
+          </div>
+
+          <p class="reveal">
+            These three terms are closely related but distinct. Understanding the difference is
+            essential for anyone entering the compliance field.
+          </p>
+
+          <div class="reveal" style="margin: var(--space-8) 0;">
+            <div class="card" style="margin-bottom: var(--space-4);">
+              <h4 class="card__title" style="font-size: var(--text-lg);">
+                <span class="badge badge--amber">AML</span>
+                Anti-Money Laundering
+              </h4>
+              <p class="card__text">
+                Laws, regulations, and procedures designed to prevent criminals from disguising
+                illegally obtained funds as legitimate income. AML focuses on the
+                <strong>proceeds of crime</strong> — the money flowing out from criminal activity.
+              </p>
+            </div>
+
+            <div class="card" style="margin-bottom: var(--space-4);">
+              <h4 class="card__title" style="font-size: var(--text-lg);">
+                <span class="badge badge--teal">CFT</span>
+                Counter-Financing of Terrorism
+              </h4>
+              <p class="card__text">
+                Measures to detect and prevent the financing of terrorist activities. Unlike AML,
+                CFT deals with money flowing <strong>towards</strong> crime — the funds may even
+                originate from legitimate sources (charitable donations, legal businesses) but are
+                diverted to fund terrorism.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4 class="card__title" style="font-size: var(--text-lg);">
+                <span class="badge badge--purple">Sanctions</span>
+                Economic & Trade Sanctions
+              </h4>
+              <p class="card__text">
+                Restrictions imposed by governments and international bodies (UN, EU, OFAC) against
+                specific countries, entities, or individuals. Sanctions compliance requires financial
+                institutions to screen customers and transactions against sanctions lists and block
+                prohibited dealings.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout callout--info reveal">
+            <p>
+              <strong>📌 Remember</strong>
+              In practice, these three areas overlap significantly. Most compliance programs are
+              structured as "AML/CFT" or "AML/Sanctions" functions. The FATF's Recommendations
+              cover all three areas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- NEXT STEPS -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="cta-banner__title">Ready for the next step?</h2>
+          <p class="cta-banner__text">
+            Now that you understand the basics, explore the global regulatory landscape
+            or dive into core compliance concepts.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="regulatory-landscape.html" class="btn btn--primary btn--lg">
+              Global Regulations →
+            </a>
+            <a href="core-concepts.html" class="btn btn--secondary btn--lg">
+              Core Concepts
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__brand-logo">
+            <img src="images/logo.png" alt="The AML Desk Logo" class="footer__logo-image">
+          </a>
+          <p>Making AML/CFT concepts accessible to everyone — free of cost, free of jargon.</p>
+        </div>
+        <div class="footer__column">
+          <h5>Learn</h5>
+          <ul>
+            <li><a href="fundamentals.html">AML Fundamentals</a></li>
+            <li><a href="regulatory-landscape.html">Regulatory Landscape</a></li>
+            <li><a href="core-concepts.html">Core Concepts</a></li>
+            <li><a href="typologies.html">Typologies &amp; Red Flags</a></li>
+            <li><a href="landmark-cases.html">Landmark Cases</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h5>Tools</h5>
+          <ul>
+            <li><a href="glossary.html">A–Z Glossary</a></li>
+            <li><a href="quizzes.html">Quizzes &amp; Flashcards</a></li>
+            <li><a href="news.html">Global News Feed</a></li>
+            <li><a href="careers.html">Careers in AML</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__disclaimer" role="note">
+        <p>
+          <strong>⚠️ Educational Disclaimer</strong>
+          This website is created for educational and awareness purposes only. It does not constitute legal, regulatory, or compliance advice, and should not be relied upon as a substitute for professional guidance, official regulatory publications, or your employer's compliance policies. Content is compiled from publicly available regulatory and academic sources.
+        </p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The AML Desk. Educational resource — not legal advice.</p>
+        <div class="footer__bottom-links">
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
