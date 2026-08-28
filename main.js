@@ -11,9 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.navbar__toggle');
   const navLinks = document.querySelector('.navbar__links');
   const overlay = document.querySelector('.navbar__overlay');
+  const dropdownToggle = document.querySelector('.navbar__dropdown-toggle');
+  const dropdown = document.querySelector('.navbar__dropdown');
 
   function openMenu() {
     toggle?.classList.add('active');
+    toggle?.setAttribute('aria-expanded', 'true');
     navLinks?.classList.add('open');
     overlay?.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -21,12 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function closeMenu() {
     toggle?.classList.remove('active');
+    toggle?.setAttribute('aria-expanded', 'false');
     navLinks?.classList.remove('open');
     overlay?.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  toggle?.addEventListener('click', () => {
+  toggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
     if (navLinks?.classList.contains('open')) {
       closeMenu();
     } else {
@@ -36,8 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   overlay?.addEventListener('click', closeMenu);
 
-  // Close menu on link click (mobile)
-  navLinks?.querySelectorAll('a').forEach(link => {
+  // Dropdown toggle on mobile (allows expanding/collapsing Learn submenu)
+  dropdownToggle?.addEventListener('click', (e) => {
+    if (window.innerWidth <= 900) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropdown?.classList.toggle('dropdown-closed');
+      const isClosed = dropdown?.classList.contains('dropdown-closed');
+      const menu = dropdown?.querySelector('.navbar__dropdown-menu');
+      if (menu) {
+        menu.style.display = isClosed ? 'none' : 'block';
+      }
+    }
+  });
+
+  // Close menu on link click (mobile) for actual page links & anchor targets
+  navLinks?.querySelectorAll('a:not(.navbar__dropdown-toggle)').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 900) {
         closeMenu();
